@@ -1,0 +1,135 @@
+import Head from "next/head"
+import { useResizeDetector } from "react-resize-detector";
+import GWHeader from "../components/organisms/GWHeader";
+import Div from "../components/styled/Div";
+import FlexContainer from "../components/styled/FlexContainer";
+import GWFooter from "../components/organisms/GWFooter";
+import { ColorModeContextProvider } from "../contexts/ColorModeContext";
+import Container from "../components/styled/Container";
+import GWSectionTable from "../components/molecules/GWSectionTable";
+import GWAvenirFont from "../components/atoms/GWAvenirFont";
+import Colors from "../colors/colors";
+import GWInitial from "../components/atoms/GWInitial";
+
+const Demo2 = (props) => {
+    const { width, height, ref } = useResizeDetector()
+
+    const columns = [
+        {
+            name: 'vault',
+            title: 'Vault',
+        },
+        {
+            name: 'min_vaulting_fee',
+            title: 'Min. vaulting Fee',
+        },
+        {
+            name: 'annual_fee',
+            title: 'Annual Fee',
+        } ];
+    const data = [
+        {
+            vault: () => (<><i className="fa fa-flag-uk"/> <b> London, UK </b></>),
+            min_vaulting_fee: '5€',
+            annual_fee: '',
+            sectionIndicator: true,
+        },
+        {
+            vault: () => (<FlexContainer sx={{ justifyContent: "flex-start", marginTop: "12px", }}>
+                <GWInitial symbol="Au" bgColor={Colors.gold}/>
+                <FlexContainer sx={{ marginLeft: "8px", justifyContent: "flex-start", alignItems: "center" }}>
+                    <GWAvenirFont
+                        sx={{ fontWeight: 400, fontSize: "18px", lineHeight: "28px", color: Colors.navy }}>Gold <span
+                        style={{ color: Colors.grey300 }}>(Au)</span></GWAvenirFont>
+                </FlexContainer>
+            </FlexContainer>),
+            min_vaulting_fee: '',
+            annual_fee: '0.15%',
+        },
+        {
+            vault: () => (<FlexContainer sx={{ justifyContent: "flex-start", marginTop: "12px", }}>
+                <GWInitial symbol="Au" bgColor={Colors.gold}/>
+                <FlexContainer sx={{ marginLeft: "8px", justifyContent: "flex-start", alignItems: "center" }}>
+                    <GWAvenirFont
+                        sx={{ fontWeight: 400, fontSize: "18px", lineHeight: "28px", color: Colors.navy }}>Gold <span
+                        style={{ color: Colors.grey300 }}>(Au)</span></GWAvenirFont>
+                </FlexContainer>
+            </FlexContainer>),
+            min_vaulting_fee: '',
+            annual_fee: '0.15%',
+        },
+        {
+            vault: () => (<FlexContainer sx={{ justifyContent: "flex-start", marginTop: "12px", }}>
+                <GWInitial symbol="Au" bgColor={Colors.gold}/>
+                <FlexContainer sx={{ marginLeft: "8px", justifyContent: "flex-start", alignItems: "center" }}>
+                    <GWAvenirFont
+                        sx={{ fontWeight: 400, fontSize: "18px", lineHeight: "28px", color: Colors.navy }}>Gold <span
+                        style={{ color: Colors.grey300 }}>(Au)</span></GWAvenirFont>
+                </FlexContainer>
+            </FlexContainer>),
+            min_vaulting_fee: '',
+            annual_fee: '0.15%',
+        },
+        {
+            vault: () => (<FlexContainer sx={{ justifyContent: "flex-start", marginTop: "12px", }}>
+                <GWInitial symbol="Au" bgColor={Colors.gold}/>
+                <FlexContainer sx={{ marginLeft: "8px", justifyContent: "flex-start", alignItems: "center" }}>
+                    <GWAvenirFont
+                        sx={{ fontWeight: 400, fontSize: "18px", lineHeight: "28px", color: Colors.navy }}>Gold <span
+                        style={{ color: Colors.grey300 }}>(Au)</span></GWAvenirFont>
+                </FlexContainer>
+            </FlexContainer>),
+            min_vaulting_fee: '',
+            annual_fee: '0.15%',
+        },
+        {
+            vault: () => (<><i className="fa fa-flag-uk"/> <b> Vancouver, CA </b></>),
+            min_vaulting_fee: '5€',
+            annual_fee: '',
+            sectionIndicator: true,
+        },
+        {
+            vault: () => (<FlexContainer sx={{ justifyContent: "flex-start", marginTop: "12px", }}>
+                <GWInitial symbol="Au" bgColor={Colors.gold}/>
+                <FlexContainer sx={{ marginLeft: "8px", justifyContent: "flex-start", alignItems: "center" }}>
+                    <GWAvenirFont
+                        sx={{ fontWeight: 400, fontSize: "18px", lineHeight: "28px", color: Colors.navy }}>Gold <span
+                        style={{ color: Colors.grey300 }}>(Au)</span></GWAvenirFont>
+                </FlexContainer>
+            </FlexContainer>),
+            min_vaulting_fee: '',
+            annual_fee: '0.15%',
+        }, ];
+
+    return (
+        <>
+            <Head>
+                <title>Create Next App</title>
+                <meta name="description" content="Generated by create next app"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+            <main style={{ width: "100%" }} ref={ref}>
+                <GWHeader/>
+                <Container sx={{ background: "#F5F5F5" }}>
+                    <Div className="row" sx={{ paddingTop: "100px" }}>
+                        <FlexContainer className="col-md-8 mx-auto">
+                            <GWSectionTable columns={columns} data={data}/>
+                        </FlexContainer>
+                    </Div>
+                </Container>
+                <GWFooter/>
+            </main>
+        </>
+    )
+};
+
+Demo2.getLayout = function getLayout(page) {
+    return (
+        <ColorModeContextProvider>
+            {page}
+        </ColorModeContextProvider>
+    )
+}
+
+export default Demo2;

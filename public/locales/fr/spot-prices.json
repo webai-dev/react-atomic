@@ -1,0 +1,12 @@
+{
+    "current_market_time": "Heure actuelle du marché",
+    "current_news": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in.",
+    "daily_movement": "Mouvement quotidien",
+    "daily_movement_info": "Le changement de prix en montant et en pourcentage basé sur le dernier meilleur prix du marché et le dernier meilleur prix d'hier",
+    "extended_market_time": "Heures de marché prolongées",
+    "live_market_spot_prices": "Cours au comptant du marché en direct",
+    "market_best_price": "Meilleurs prix du marché",
+    "market_best_price_info": "Les meilleurs prix d'achat et de vente de nos carnets d'ordres de fournisseurs de liquidité avec comparaison avec le dernier meilleur prix de la veille",
+    "unlike_many_bullion": "Contrairement à de nombreux marchands de lingots, nous sommes réglementés par la FCA au Royaume-Uni et la Banque centrale de Lituanie dans l'UE. Cela signifie que nos politiques et nos opérations doivent répondre à des exigences strictes en matière de services financiers, ce qui vous donne la certitude que nous opérons de manière professionnelle, en pensant d'abord à vous.",
+    "why_are_you": "Pourquoi êtes-vous réglementé au Royaume-Uni et dans l'UE ?"
+}

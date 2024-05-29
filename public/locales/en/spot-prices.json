@@ -1,0 +1,12 @@
+{
+    "current_market_time": "Current market time",
+    "current_news": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in.",
+    "daily_movement": "Daily Movement",
+    "daily_movement_info": "The change in price by amount and percentage based on the latest best price from the market and the last best price from yesterday",
+    "extended_market_time": "Extended Market Hours",
+    "live_market_spot_prices": "Live Market Spot Prices",
+    "market_best_price": "Market Best Prices",
+    "market_best_price_info": "The best buy and sell prices from our liquidity provider order books with comparison against the last best price from the day before",
+    "unlike_many_bullion": "Unlike many bullion dealers, we are regulated by the FCA in the UK and the Central Bank of Lithuania in the EU. This means that our policies and operations need to meet strict financial services requirements giving you the confidence that we operate professionally, with you first in mind",
+    "why_are_you": "Why are you regulated in the UK & EU"
+}
